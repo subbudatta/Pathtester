@@ -81,7 +81,7 @@ Rem Build
 set BUILD_CMD_BASE= %TARGETS_SCRIPT% /m:%CPU_COUNT% /t:Clean
 echo BUILD_CMD_BASE %BUILD_CMD_BASE%
 "D:\installed sw\VSIUAL STUDIO\MSBuild\Current\Bin\MSBuild.exe" %TARGETS_SCRIPT% /m:%CPU_COUNT% /t:Clean /m:%CPU_COUNT% /t:Build
-goto :perform
+ rem goto :perform
 if errorlevel 1 goto error
 
 Rem TODO: Publish to be performed
@@ -91,9 +91,9 @@ if defined BUILD_INTERACTIVE (
 )
 goto :eof
 :perform 
-start"D:\Views\devops_master\Examples\numberGuesser\numberGuesser\bin\Debug\netcoreapp3.1\numberGuesser.dll"
-"D:\Views\devops_master\Examples\numberGuesser\numberGuesser\bin\Debug\netcoreapp3.1\numberGuesser.exe"
-"D:\Views\devops_master\Examples\numberGuesser\numberGuesser\bin\Debug\netcoreapp3.1\numberGuesser.pdb"
+rem start"D:\Views\devops_master\Examples\numberGuesser\numberGuesser\bin\Debug\netcoreapp3.1\numberGuesser.dll"
+rem "D:\Views\devops_master\Examples\numberGuesser\numberGuesser\bin\Debug\netcoreapp3.1\numberGuesser.exe"
+rem "D:\Views\devops_master\Examples\numberGuesser\numberGuesser\bin\Debug\netcoreapp3.1\numberGuesser.pdb"
 
 
 :error
