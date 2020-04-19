@@ -10,7 +10,7 @@ Build script
   <Import Project="..\..\Build\BuildCodebases.targets" />
 
   <ItemGroup>
-    <Solutions Include="..\..\Examples\HelloWorld\HelloWorld.sln" />
+    <Solutions Include="..\HelloWorld\HelloWorld.sln" />
     <!-- <PublishScripts Include="Publish.targets" /> -->
   </ItemGroup>
 </Project>
